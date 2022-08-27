@@ -4,8 +4,11 @@ title: Vocab
 permalink: /notes/
 ---
 
-Word: Print Meaning: A way to print messages in python
+![]({{site.baseurl}}/images/kvocab.png "https://github.com/fastai/fastpages")
 
-msg = "Hello World"
-print (msg)
+Hello and Welcome To My Vocabulary Book Here I will Post My Vocabulary Development Each Week.
+
+Week 1 
+- print fuction: A way to print messages in python.
+- if else statement: If something happens there should action displayed; else another actions should happen.
 
