@@ -3,10 +3,10 @@
     
         "post0": {
             "title": "Title",
-            "content": "",
-            "url": "https://krishiv111.github.io/liverpoolkm/2022/08/24/personal.html",
-            "relUrl": "/2022/08/24/personal.html",
-            "date": " • Aug 24, 2022"
+            "content": "- toc: true - branch: master - badges: true - comments: true - author: Krishiv Mahendru - categories: [ jupyter] . - The purpose is to be able to use this page as a way to reflect on my learning for APCSP over the weeks . - I have learned how to setup fastpages and my blog - I have learned how to use the print function - I have learn if and else statements through the development of my quiz - I have setup my bash notebook .",
+            "url": "https://krishiv111.github.io/liverpoolkm/2022/08/26/my-study-space.html",
+            "relUrl": "/2022/08/26/my-study-space.html",
+            "date": " • Aug 26, 2022"
         }
         
     
