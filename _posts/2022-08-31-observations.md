@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: Krishivs summary and Panel Notes 
+description: Krishivs observations
 categories: [markdown]
-title: My panel Notes
+title:  My observations
 ---
 
 
