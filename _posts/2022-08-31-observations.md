@@ -7,7 +7,7 @@ title:  My observations
 ---
 
 
-![]({{site.baseurl}}/images/2022-08-31 at 3.28.18 PM.png "https://github.com/fastai/fastpages")
+![]({{site.baseurl}}/images/layoutchnge.png "https://github.com/fastai/fastpages")
 
 # Observations
 
