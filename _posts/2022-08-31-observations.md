@@ -7,7 +7,7 @@ title:  My observations
 ---
 
 
-![]({{site.baseurl}}/images/layoutchnge.png "https://github.com/fastai/fastpages")
+![]({{site.baseurl}}/images/yessir.png "https://github.com/fastai/fastpages")
 
 # Observations
 
