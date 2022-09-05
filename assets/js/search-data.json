@@ -149,6 +149,17 @@
 
   
       ,"page1": {
+          "title": "Krishiv's First Table",
+          "content": "&lt;!Doctype html&gt; . My first Table . What I have Learned From APCSP . Week 0 Week 1 Week 2 . During Week 0 I learned to setup all my tools for this course I also explored creating a fastpages | During Week 1 I learned about python, I even made a quiz and learned about if else statements | During Week 2 I learned about lists,dictionaries,and keys. Also I learned about html fragments which is how I am creating my table right now | . .",
+          "url": "https://krishiv111.github.io/liverpoolkm/_pages/My%20Learning.html",
+          "relUrl": "/_pages/My%20Learning.html",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
           "title": "About Me",
           "content": "My Name is Krishiv I have an older sister and I live with my mom and dad. I like to play soccer in my freetime and nowdays I like to learn about code. I am in tenth grade and my favorite class is physics. . This is a picture of my family . .",
           "url": "https://krishiv111.github.io/liverpoolkm/about/",
@@ -161,7 +172,7 @@
   
 
   
-      ,"page3": {
+      ,"page4": {
           "title": "Vocab",
           "content": ". Hello and Welcome To My Vocabulary Book Here I will Post My Vocabulary Development Each Week. . Week 1 . print fuction: A way to print messages in python. | if else statement: If something happens there should action displayed; else another actions should happen. | .",
           "url": "https://krishiv111.github.io/liverpoolkm/notes/",
@@ -191,7 +202,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://krishiv111.github.io/liverpoolkm/robots.txt",
