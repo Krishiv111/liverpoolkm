@@ -12,3 +12,7 @@ Week 1
 - print fuction: A way to print messages in python.
 - if else statement: If something happens there should action displayed; else another actions should happen.
 
+Week 2 
+- lists: a way to put sequence of elements using square brackets.
+- loops: a way to replay the function without having to manually play the outputs
+
