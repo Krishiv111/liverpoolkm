@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Krishiv's Quiz making Journal!
 categories: [markdown]
-title: Table 
+title: Planning My Quiz
 ---
 
 ### My Ideas Before Creating the Quiz
