@@ -16,3 +16,8 @@ Week 2
 - lists: a way to put sequence of elements using square brackets.
 - loops: a way to replay the function without having to manually play the outputs
 
+Week 3
+- OnEvent: a way to interact on the invent of interaction
+- setscreen: a set screen due to the interaction 
+-
+
