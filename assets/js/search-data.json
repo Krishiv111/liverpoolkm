@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Project Plan",
-            "content": "Pre Plan . My Plan is to create some sort of game related to soccer. | I will be able to impact input and output by using variables and functions that wil let my user interact with the app to get a result | an interaction I can use would be making a data table of the best teams in the world with their stats and performance in which the user could interact with it. | I can uses Databases, Lists, loops and conditionals to function it. | .",
+            "content": "Purpose and Function . I would make a game for soccer that will track players performance during games | Also I would implement screen shots and my purpose throughout my app. | . Data Abstraction . I would collect data my making databases with implementing lists, keys and dictionaries | Example: I would use a list to show the different teams and make a database with all the players of a team and their performance. | . Managing Complexity . I would manage complexity by making a section called wonders in my app | This would be a way to show how I made my app and how others can do it | . Procedural Abstraction . I will do this by implemeting a blogging fastpage that will show my procuedure step by step and progress | . Algorithim Implementation . I will do this by implementing iterations by making a search bar in which people can search for special things in the list | . Testing . I will implement this by showing how I tested each part of my website with adding data from users | .",
             "url": "https://krishiv111.github.io/liverpoolkm/markdown/2022/09/11/my-project-plan.html",
             "relUrl": "/markdown/2022/09/11/my-project-plan.html",
             "date": " • Sep 11, 2022"
