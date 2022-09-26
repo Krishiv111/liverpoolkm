@@ -19,5 +19,14 @@ Week 2
 Week 3
 - OnEvent: a way to interact on the invent of interaction
 - setscreen: a set screen due to the interaction 
--
+
+Week 5
+
+Communication- talking with group 
+critical thinking- solving problems along the way 
+creativity to show how your application differs 
+collaboration- it can be through leadership and team work
+reasearch- learning new aspects
+technical- working with your team to achieve purpose of your program
+
 
