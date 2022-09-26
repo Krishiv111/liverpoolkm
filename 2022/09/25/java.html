@@ -134,6 +134,7 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-javascript"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">);</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;testing out java console.log&quot;</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;trial&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -148,6 +149,7 @@ window.onload = wrap_img;
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Hello, World!
 testing out java console.log
+trial
 </pre>
 </div>
 </div>
@@ -308,33 +310,30 @@ object ; [ 1, 2, 3 ]
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define a function to hold data for a Person</span>
-<span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">player</span><span class="p">,</span> <span class="nx">team</span><span class="p">,</span> <span class="nx">region</span><span class="p">)</span> <span class="p">{</span>
+<div class=" highlight hl-javascript"><pre><span></span><span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">player</span><span class="p">,</span> <span class="nx">team</span><span class="p">,</span> <span class="nx">region</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">player</span> <span class="o">=</span> <span class="nx">player</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">team</span> <span class="o">=</span> <span class="nx">team</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">region</span> <span class="o">=</span> <span class="nx">region</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">role</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="c1">// define a setter for role in Person data</span>
+
 <span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">setRole</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">role</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">role</span> <span class="o">=</span> <span class="nx">role</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="c1">// define a JSON conversion &quot;method&quot; associated with Person</span>
+
 <span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toJSON</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="nx">player</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">player</span><span class="p">,</span> <span class="nx">team</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">team</span><span class="p">,</span> <span class="nx">region</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">region</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">role</span><span class="p">};</span>
     <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
     <span class="k">return</span> <span class="nx">json</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="c1">// make a new Person and assign to variable teacher</span>
 <span class="kd">var</span> <span class="nx">Player</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Krishiv&quot;</span><span class="p">,</span> <span class="s2">&quot; Del Mar Sharks&quot;</span><span class="p">,</span><span class="s2">&quot;USA&quot;</span> <span class="p">);</span>
 <span class="nx">Player</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">&quot;Player&quot;</span><span class="p">);</span>
 
-<span class="c1">// output of Object and JSON/string associated with Teacher</span>
-<span class="nx">logItType</span><span class="p">(</span><span class="nx">Player</span><span class="p">);</span>  <span class="c1">// object type is easy to work with in JavaScript</span>
-<span class="nx">logItType</span><span class="p">(</span><span class="nx">Player</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">());</span>  <span class="c1">// json/string is useful when passing data on internet</span>
+<span class="nx">logItType</span><span class="p">(</span><span class="nx">Player</span><span class="p">);</span> 
+<span class="nx">logItType</span><span class="p">(</span><span class="nx">Player</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">());</span>
 </pre></div>
 
     </div>
@@ -370,8 +369,7 @@ string ; {&#34;player&#34;:&#34;Krishiv&#34;,&#34;team&#34;:&#34; Del Mar Sharks
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define a student Array of Person(s)</span>
-<span class="kd">var</span> <span class="nx">gamers</span> <span class="o">=</span> <span class="p">[</span> 
+<div class=" highlight hl-javascript"><pre><span></span><span class="kd">var</span> <span class="nx">gamers</span> <span class="o">=</span> <span class="p">[</span> 
     <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Messi&quot;</span><span class="p">,</span> <span class="s2">&quot;PSG&quot;</span><span class="p">,</span> <span class="s2">&quot;europe&quot;</span><span class="p">),</span>
     <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;Ronaldo&quot;</span><span class="p">,</span> <span class="s2">&quot;ManU&quot;</span><span class="p">,</span> <span class="s2">&quot;europe&quot;</span><span class="p">),</span>
     <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&quot;vela&quot;</span><span class="p">,</span> <span class="s2">&quot;LAFC&quot;</span><span class="p">,</span> <span class="s2">&quot;USA&quot;</span><span class="p">),</span>
@@ -379,8 +377,7 @@ string ; {&#34;player&#34;:&#34;Krishiv&#34;,&#34;team&#34;:&#34; Del Mar Sharks
 
 <span class="p">];</span>
 
-<span class="c1">// define a classroom and build Classroom objects and json</span>
-<span class="kd">function</span> <span class="nx">Classroom</span><span class="p">(</span><span class="nx">teacher</span><span class="p">,</span> <span class="nx">students</span><span class="p">){</span> <span class="c1">// 1 teacher, many student</span>
+<span class="kd">function</span> <span class="nx">Classroom</span><span class="p">(</span><span class="nx">teacher</span><span class="p">,</span> <span class="nx">students</span><span class="p">){</span> 
     <span class="c1">// start Classroom with Teacher</span>
     <span class="nx">teacher</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">&quot;Teacher&quot;</span><span class="p">);</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">teacher</span> <span class="o">=</span> <span class="nx">teacher</span><span class="p">;</span>
