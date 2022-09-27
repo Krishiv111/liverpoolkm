@@ -21,12 +21,12 @@ Week 3
 - setscreen: a set screen due to the interaction 
 
 Week 5
-
-Communication- talking with group 
-critical thinking- solving problems along the way 
-creativity to show how your application differs 
-collaboration- it can be through leadership and team work
-reasearch- learning new aspects
-technical- working with your team to achieve purpose of your program
+Agile Methodology: Agile methodology is a way to have orginizations through the way of a project in a group with the fundamentals below.
+Communication- talking with group and getting tasks done
+- critical thinking- solving problems along the way 
+- creativity- to show how your application differs 
+- ollaboration- it can be through leadership and team work
+- reasearch- learning new aspects
+- technical- working with your team to achieve purpose of your program
 
 
