@@ -370,17 +370,6 @@
 
   
       ,"page10": {
-          "title": "Submenu",
-          "content": "&lt;!Doctype html&gt; . My first Table . SubMenu . My Submenu . Kernal Proof | API Usage | . .",
-          "url": "https://krishiv111.github.io/liverpoolkm/_pages/zzzsubmenu.html",
-          "relUrl": "/_pages/zzzsubmenu.html",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page11": {
           "title": "Krishiv SubMenu",
           "content": "&lt;!Doctype html&gt; . My first Table . What I have Learned From APCSP . Api Python Stuff . This contains my api | This has my python stuff | . .",
           "url": "https://krishiv111.github.io/liverpoolkm/_pages/zzzzzznewsub.html",
@@ -402,7 +391,7 @@
   
 
   
-      ,"page16": {
+      ,"page15": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://krishiv111.github.io/liverpoolkm/robots.txt",
