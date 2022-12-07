@@ -5,6 +5,12 @@ description: blog about the hacks
 categories: [markdown]
 title:  Lesson About Loops 
 ---
+# Vocabulary
+- Iteration- a way that code goes through a segment
+- While loop - a way that code goes through elemetnts over and over again 
+- For loops a to repeat something and its executed after its completed the repetition 
+- Booleans- a way to recongnize true/false.
+- Pop; a way to take away something at the end of the list. 
 
 # Coding Hacks
 ![]({{site.baseurl}}/images/reverse.png "https://github.com/fastai/fastpages")
