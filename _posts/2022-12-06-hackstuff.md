@@ -19,6 +19,13 @@ title:  Lesson About Loops
 - Elements - An item in a list. 
 -  Having one data type or function inside another data type or function, such as lists or loops. 
 - array - Another name for a list, depends on the language
+
+## Notes 
+- Lists have elements which can be mutated 
+- In addition python and java lists can mutate
+- pop just means remove last at the item 
+- if you check libraries its a way to find your ways to reverse pop and change elements iin your list  
+- 
 # Coding Hacks
 ![]({{site.baseurl}}/images/reverse.png "https://github.com/fastai/fastpages")
 
