@@ -298,8 +298,14 @@ qais
 
 <span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">player2</span><span class="p">:</span>
   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">player2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">,&quot;</span><span class="p">)</span>
-  <span class="n">krishivscore</span> <span class="o">=</span> <span class="n">roll_dice</span><span class="p">()</span>
-  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;You rolled </span><span class="si">{</span><span class="n">krishivscore</span><span class="si">}</span><span class="s2"> in total!&quot;</span><span class="p">)</span>
+  <span class="n">jermeyscore</span> <span class="o">=</span> <span class="n">roll_dice</span><span class="p">()</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;You rolled </span><span class="si">{</span><span class="n">jermeyscore</span><span class="si">}</span><span class="s2"> in total!&quot;</span><span class="p">)</span>
+
+  <span class="k">if</span> <span class="n">krishivscore</span> <span class="o">&gt;</span> <span class="n">jermeyscore</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Krishiv Wins&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jermey wins&quot;</span><span class="p">)</span>
+
 
 <span class="c1"># Explanation: First I took my two player which is krishiv and jermey, then I made sure to define them with the special rad int function to simulate rolling the dice. Then I made a loop displaying how the dice would be rolled as it prints a number the person rolled</span>
 </pre></div>
@@ -315,9 +321,10 @@ qais
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Krishiv,
-You rolled 8 in total!
+You rolled 6 in total!
 Jermey,
-You rolled 9 in total!
+You rolled 7 in total!
+Jermey wins
 </pre>
 </div>
 </div>
