@@ -16,3 +16,9 @@ title: Blog Post Reflection
 - Yes I think those issues of dopamine are real due to the fact that people can get addicted to something like video games or social media  which prevent them from being active in todays society. 
 
 ### 5.2 Reflection
+> 1. How does someone empower themself in a digital world?
+- In a digital world in order to be empowered it is all about knowledge, in order to get knowlege you should seek to educate yourself and make sure that everything you do is growing your mind and challenging you which will eventually empower you.
+> 2. How does someone that is empowered help someone that is not empowered? Describe something you could do at Del Norte HS.
+- You could help somebody that nots empowered by giving them guidence and showing them that there is a way, at del norte we have many clubs and buddy systems which can help people guide one another to being empowered.
+> 3. Is paper or red tape blocking digital empowerment? Are there such barriers at Del Norte? Elsewhere?
+- Yes a way that can block digital acknowlegement is the ability in digital rescources which can make other left behind leaving the world to create a divide. For example in third world countries where technology isn't the best and most people cant afford it most liokely they wont be educated restriciting empowerment. 
