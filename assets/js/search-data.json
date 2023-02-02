@@ -2,6 +2,28 @@
   
     
         "post0": {
+            "title": "Developing Procedures 3.13.2",
+            "content": "Essential Knowledge . Procedure -is a named group of programming instructions that serves a purpose | How to code Procedures -While Coding a procedure you must makes sure it has as name and a clear purpose weather to executre a response or complete an action | . How do we make our procedure purposeful and consice . to make a procedure serve a purpose it should be able to hae multiple functions | Also to keep a procedure maximizing capability it should be simple and reduced to get the final result | . What is important to do while writing procedures . It is important to understand you procudeures procedure does when creating one as it will help you create a impactful procedure | . Procedure That Update Grade Based on retake . after you take a quiz your teacher lets you retake it for full credit in which your are able to replace your grade | TEST WITH first quiz GRADE is 40% and second is 90% | PROCEDURE updateGRADE { points, current grade,new grade currentGrade = current points /75 | currentGrade = current crade * 100 if currentGrade &gt; quizGrade | return currentGrade | . | . | } | .",
+            "url": "https://krishiv111.github.io/liverpoolkm/2023/02/01/LessonDevProcedures2.html",
+            "relUrl": "/2023/02/01/LessonDevProcedures2.html",
+            "date": " • Feb 1, 2023"
+        }
+        
+    
+  
+    
+        ,"post1": {
+            "title": "My Lists",
+            "content": "name = &quot;Krishiv&quot; print (&quot;name&quot;, name, type (name)) age = 15 print (&quot;age&quot;, age, type (age)) print() sports =[&quot;soccer&quot;, &quot;basketball&quot;, &quot;football&quot;] print(&quot;sports&quot;, sports, type(sports)) print(&quot;- sports[1]&quot;, sports[1], type(sports[1])) print() person = { &quot;name&quot;: name, &quot;age&quot;: age } print(&quot;person&quot;, person, type(person)) print(&#39;- person[&quot;name&quot;]&#39;, person[&quot;name&quot;], type(person[&quot;name&quot;])) . name Krishiv &lt;class &#39;str&#39;&gt; age 15 &lt;class &#39;int&#39;&gt; sports [&#39;soccer&#39;, &#39;basketball&#39;, &#39;football&#39;] &lt;class &#39;list&#39;&gt; - sports[1] basketball &lt;class &#39;str&#39;&gt; person {&#39;name&#39;: &#39;Krishiv&#39;, &#39;age&#39;: 15} &lt;class &#39;dict&#39;&gt; - person[&#34;name&#34;] Krishiv &lt;class &#39;str&#39;&gt; . InfoDB = [] InfoDB.append({ &quot;FirstName&quot;: &quot;Krishiv&quot;, &quot;LastName&quot;: &quot;Mahendru&quot;, &quot;DOB&quot;: &quot;april 22&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;favorites subject&quot; : &quot;Comp Sci&quot;, &quot;Favorite_Desserts&quot; : [&quot;Brownies&quot;, &quot;cookies&quot;] }) print(InfoDB) . [{&#39;FirstName&#39;: &#39;Krishiv&#39;, &#39;LastName&#39;: &#39;Mahendru&#39;, &#39;DOB&#39;: &#39;april 22&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;favorites subject&#39;: &#39;Comp Sci&#39;, &#39;Favorite_Desserts&#39;: [&#39;Brownies&#39;, &#39;cookies&#39;]}] . def print_data(d_rec): print(d_rec[&quot;FirstName&quot;], d_rec[&quot;LastName&quot;]) print(&quot; t&quot;, &quot;Residence:&quot;, d_rec[&quot;Residence&quot;]) print(&quot; t&quot;, &quot;Birth Day:&quot;, d_rec[&quot;DOB&quot;]) print(&quot; t&quot;, &quot;favorites subjects: &quot;, end=&quot;&quot;) print(&quot;, &quot;.join(d_rec[&quot;Favorite_Desserts&quot;])) print() def for_loop(InfoDb): print(&quot;For loop output n&quot;) for record in InfoDb: print_data(record) for_loop(InfoDB) . For loop output Krishiv Mahendru Residence: San Diego Birth Day: april 22 favorites subjects: Brownies, cookies . def recursive_loop(i): if i &lt; len(InfoDB): record = InfoDB[i] print_data(record) recursive_loop(i + 1) return print(&quot;Recursive loop output n&quot;) recursive_loop(0) . Recursive loop output Krishiv Mahendru Residence: San Diego Birth Day: april 22 favorites subjects: Brownies, cookies .",
+            "url": "https://krishiv111.github.io/liverpoolkm/2023/02/01/.lists11.html",
+            "relUrl": "/2023/02/01/.lists11.html",
+            "date": " • Feb 1, 2023"
+        }
+        
+    
+  
+    
+        ,"post2": {
             "title": "Feature For project",
             "content": "College Board Criteria . Row 1: It will function as an input and output becuase the user will input the parameters of the house they are looking for and htey will be pompted to different houses that come with their set parameters | Row 2: Data will be stored through this features as it will use the users input to save a house as a favorite in order to book inputting data into the database | Row 3: I will use lists to and other data abstraction in order to make the code minimal as possible while managing complexity | Row 4:The parameters of bedroom,baths and price will be set as a result of calling these procedures leaving it to output these certain houses. | Row 5:I can implement selection as the database will only choose certain amount of houses leaving it to fulfill criteria. | Row 6: This will be tested due to the fact that it will have input and outputs making it user friendly. | . . Code Plan . The code plan is to first setup the frontend by 2/3 getting all buttons and user input sections displayed to fast pages. Then I will create the databases of each of the houses. After I will code the buttons in order to fetch the from the db using fetch in javascript, database with python, and frontend with sass and html. This will take me about 2.5 weeks but it will need a lot of planning to make sure that there is there is time to correct error and get perfection. | . Video Plan . In the video I will create scenarios where a person wants to buy a house and I use my features in order to find the certain houses. I can show my use of parameters and procedures by adding a variety of houses and displaying them showing the inputs and outputs of the feature as well as showing the funtioning backend. | .",
             "url": "https://krishiv111.github.io/liverpoolkm/collegeboard/2023/01/30/memory.html",
@@ -12,7 +34,7 @@
     
   
     
-        ,"post1": {
+        ,"post3": {
             "title": "MCQ REFLECTION",
             "content": ". . My calls are correct but its or becuase it goes to the floor that wasnt being used meaning it cant be called to both of them leaving this response as incorrect. | . . My mistake is that I chose and becuase I thought that the boolean could be other however is they are both true it would be impossible, leaving or to be correct | . . I didnt relize that it said chose two options however d is also correct as it make val 2 result in false | . . This was inncorrect as the as the procedure wasnt equally sorted leaving this to be incorrect | . . I also didnt see that it wanted me to chose two answers of code segments however d is also correct as it goes throught a segment giving back the circles as it was depicted above | . . This answer is incorrect as the if statement will be true making the number incorrect which is why It should have been option a as it already dispays the correct asnwer | . . My answer was wrong due to the fact that as this input will make the loop be incorrect as the numbers wouldn&#39;t line up | . . I chose the option that would make the code segment evaluate to the wrong sum of 20% which wouldnt make sense in this context | . . My answer is wrong beucase I didnt understand what it meant by hexidecimal, however V is correct as it has a base of 16 going to a hexidecimal of 56 | . . My response was incorrect as it moved completed the count without moving the position ahead leaving it to miscout position and lose track making it inncorrect | .",
             "url": "https://krishiv111.github.io/liverpoolkm/collegeboard/2023/01/30/mcqtest.html",
@@ -23,31 +45,9 @@
     
   
     
-        ,"post2": {
-            "title": "Developing Procedures 3.13.2",
-            "content": "Essential Knowledge . Procedure -is a named group of programming instructions that serves a purpose | How to code Procedures -While Coding a procedure you must makes sure it has as name and a clear purpose weather to executre a response or complete an action | . How do we make our procedure purposeful and consice . to make a procedure serve a purpose it should be able to hae multiple functions | Also to keep a procedure maximizing capability it should be simple and reduced to get the final result | . What is important to do while writing procedures . It is important to understand you procudeures procedure does when creating one as it will help you create a impactful procedure | . Procedure That Update Grade Based on retake . after you take a quiz your teacher lets you retake it for full credit in which your are able to replace your grade | TEST WITH first quiz GRADE is 40% and second is 90% | PROCEDURE updateGRADE { points, current grade,new grade currentGrade = current points /75 | currentGrade = current crade * 100 if currentGrade &gt; quizGrade | return currentGrade | . | . | } | .",
-            "url": "https://krishiv111.github.io/liverpoolkm/2023/01/30/LessonDevProcedures2.html",
-            "relUrl": "/2023/01/30/LessonDevProcedures2.html",
-            "date": " • Jan 30, 2023"
-        }
-        
-    
-  
-    
-        ,"post3": {
-            "title": "My Lists",
-            "content": "name = &quot;Krishiv&quot; print (&quot;name&quot;, name, type (name)) age = 15 print (&quot;age&quot;, age, type (age)) print() sports =[&quot;soccer&quot;, &quot;basketball&quot;, &quot;football&quot;] print(&quot;sports&quot;, sports, type(sports)) print(&quot;- sports[1]&quot;, sports[1], type(sports[1])) print() person = { &quot;name&quot;: name, &quot;age&quot;: age } print(&quot;person&quot;, person, type(person)) print(&#39;- person[&quot;name&quot;]&#39;, person[&quot;name&quot;], type(person[&quot;name&quot;])) . name Krishiv &lt;class &#39;str&#39;&gt; age 15 &lt;class &#39;int&#39;&gt; sports [&#39;soccer&#39;, &#39;basketball&#39;, &#39;football&#39;] &lt;class &#39;list&#39;&gt; - sports[1] basketball &lt;class &#39;str&#39;&gt; person {&#39;name&#39;: &#39;Krishiv&#39;, &#39;age&#39;: 15} &lt;class &#39;dict&#39;&gt; - person[&#34;name&#34;] Krishiv &lt;class &#39;str&#39;&gt; . InfoDB = [] InfoDB.append({ &quot;FirstName&quot;: &quot;Krishiv&quot;, &quot;LastName&quot;: &quot;Mahendru&quot;, &quot;DOB&quot;: &quot;april 22&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;favorites subject&quot; : &quot;Comp Sci&quot;, &quot;Favorite_Desserts&quot; : [&quot;Brownies&quot;, &quot;cookies&quot;] }) print(InfoDB) . [{&#39;FirstName&#39;: &#39;Krishiv&#39;, &#39;LastName&#39;: &#39;Mahendru&#39;, &#39;DOB&#39;: &#39;april 22&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;favorites subject&#39;: &#39;Comp Sci&#39;, &#39;Favorite_Desserts&#39;: [&#39;Brownies&#39;, &#39;cookies&#39;]}] . def print_data(d_rec): print(d_rec[&quot;FirstName&quot;], d_rec[&quot;LastName&quot;]) print(&quot; t&quot;, &quot;Residence:&quot;, d_rec[&quot;Residence&quot;]) print(&quot; t&quot;, &quot;Birth Day:&quot;, d_rec[&quot;DOB&quot;]) print(&quot; t&quot;, &quot;favorites subjects: &quot;, end=&quot;&quot;) print(&quot;, &quot;.join(d_rec[&quot;Favorite_Desserts&quot;])) print() def for_loop(InfoDb): print(&quot;For loop output n&quot;) for record in InfoDb: print_data(record) for_loop(InfoDB) . For loop output Krishiv Mahendru Residence: San Diego Birth Day: april 22 favorites subjects: Brownies, cookies . def recursive_loop(i): if i &lt; len(InfoDB): record = InfoDB[i] print_data(record) recursive_loop(i + 1) return print(&quot;Recursive loop output n&quot;) recursive_loop(0) . Recursive loop output Krishiv Mahendru Residence: San Diego Birth Day: april 22 favorites subjects: Brownies, cookies .",
-            "url": "https://krishiv111.github.io/liverpoolkm/2023/01/30/.lists11.html",
-            "relUrl": "/2023/01/30/.lists11.html",
-            "date": " • Jan 30, 2023"
-        }
-        
-    
-  
-    
         ,"post4": {
             "title": "Blog Post Reflection",
-            "content": "5.1 Reflcetion . Come up with three of your own Beneficial and corresponding Harmful Effects of Computing? Navigation Systems Allows people to find places with convienience and without paper maps | Incorrect Programing could help you get lost which would waste time and leave you for a problem to solve | In addition these navigational services can help you predict your eta and time it may take you to get form place to place. | . | Talk about dopamine issues above. Real? Parent conspiracy? Anything that is impacting your personal study and success in High School? Yes I think those issues of dopamine are real due to the fact that people can get addicted to something like video games or social media which prevent them from being active in todays society. | . | 5.2 Reflection . How does someone empower themself in a digital world? In a digital world in order to be empowered it is all about knowledge, in order to get knowlege you should seek to educate yourself and make sure that everything you do is growing your mind and challenging you which will eventually empower you. | . | How does someone that is empowered help someone that is not empowered? Describe something you could do at Del Norte HS. You could help somebody that nots empowered by giving them guidence and showing them that there is a way, at del norte we have many clubs and buddy systems which can help people guide one another to being empowered. | . | Is paper or red tape blocking digital empowerment? Are there such barriers at Del Norte? Elsewhere? Yes a way that can block digital acknowlegement is the ability in digital rescources which can make other left behind leaving the world to create a divide. For example in third world countries where technology isn’t the best and most people cant afford it most liokely they wont be educated restriciting empowerment. | . |",
+            "content": "5.1 Reflcetion . Come up with three of your own Beneficial and corresponding Harmful Effects of Computing? Navigation Systems Allows people to find places with convienience and without paper maps | Incorrect Programing could help you get lost which would waste time and leave you for a problem to solve | In addition these navigational services can help you predict your eta and time it may take you to get form place to place. | . | Talk about dopamine issues above. Real? Parent conspiracy? Anything that is impacting your personal study and success in High School? Yes I think those issues of dopamine are real due to the fact that people can get addicted to something like video games or social media which prevent them from being active in todays society. | . | 5.2 Reflection . How does someone empower themself in a digital world? In a digital world in order to be empowered it is all about knowledge, in order to get knowlege you should seek to educate yourself and make sure that everything you do is growing your mind and challenging you which will eventually empower you. | . | How does someone that is empowered help someone that is not empowered? Describe something you could do at Del Norte HS. You could help somebody that nots empowered by giving them guidence and showing them that there is a way, at del norte we have many clubs and buddy systems which can help people guide one another to being empowered. | . | Is paper or red tape blocking digital empowerment? Are there such barriers at Del Norte? Elsewhere? Yes a way that can block digital acknowlegement is the ability in digital rescources which can make other left behind leaving the world to create a divide. For example in third world countries where technology isn’t the best and most people cant afford it most liokely they wont be educated restriciting empowerment. | . | 5.3 Reflection . Write summary/thoughts/conclusions from each of the exercises above. Focus on avoiding Bias in algorithms or code you write.’ Bias in a computer program comes when a program has acsess to the rest of your apps allowing them to show you things you may agree with. However this creates a bias becuase | . |",
             "url": "https://krishiv111.github.io/liverpoolkm/markdown/2023/01/25/reflectionblog.html",
             "relUrl": "/markdown/2023/01/25/reflectionblog.html",
             "date": " • Jan 25, 2023"
@@ -669,7 +669,9 @@
   
 
   
-      ,"page4": {
+
+  
+      ,"page5": {
           "title": "Vocab",
           "content": ". Hello and Welcome To My Vocabulary Book Here I will Post My Vocabulary Development Each Week. . Week 1 . print fuction: A way to print messages in python. | if else statement: If something happens there should action displayed; else another actions should happen. | . Week 2 . lists: a way to put sequence of elements using square brackets. | loops: a way to replay the function without having to manually play the outputs | . Week 3 . OnEvent: a way to interact on the invent of interaction | setscreen: a set screen due to the interaction | . Week 5 Agile Methodology: Agile methodology is a way to have orginizations through the way of a project in a group with the fundamentals below. Communication- talking with group and getting tasks done . critical thinking- solving problems along the way | creativity- to show how your application differs | ollaboration- it can be through leadership and team work | reasearch- learning new aspects | technical- working with your team to achieve purpose of your program | .",
           "url": "https://krishiv111.github.io/liverpoolkm/notes/",
@@ -690,7 +692,7 @@
   
 
   
-      ,"page9": {
+      ,"page10": {
           "title": "",
           "content": "",
           "url": "https://krishiv111.github.io/liverpoolkm/temp",
@@ -701,7 +703,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "Time Fragment",
           "content": "&lt;!Doctype html&gt; . My first Table . What I have Learned From APCSP . Week 1 Week 2 Week 4 . During Week 0 I learned to setup all my tools for this course I also explored creating a fastpages | During Week 1 I learned about python, I even made a quiz and learned about if else statements | During Week 2 I learned about lists,dictionaries,and keys. Also I learned about html fragments which is how I am creating my table right now | During Week 3 I created my quiz using code.org app lab and I learned on event commands and a way to work using code.org | . .",
           "url": "https://krishiv111.github.io/liverpoolkm/_pages/zKrishiv's%20FIrst%20Table.html",
@@ -712,7 +714,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "Krishiv SubMenu",
           "content": "&lt;!Doctype html&gt; . My first Table . What I have Learned From APCSP . 1.1/1 as I did extra binary hacks and other elements Python Stuff . Week 1 | Group 2 | . .",
           "url": "https://krishiv111.github.io/liverpoolkm/_pages/zzzzzznewsub.html",
@@ -741,7 +743,7 @@
   
 
   
-      ,"page19": {
+      ,"page20": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://krishiv111.github.io/liverpoolkm/robots.txt",
