@@ -22,3 +22,7 @@ title: Blog Post Reflection
 - You could help somebody that nots empowered by giving them guidence and showing them that there is a way, at del norte we have many clubs and buddy systems which can help people guide one another to being empowered.
 > 3. Is paper or red tape blocking digital empowerment? Are there such barriers at Del Norte? Elsewhere?
 - Yes a way that can block digital acknowlegement is the ability in digital rescources which can make other left behind leaving the world to create a divide. For example in third world countries where technology isn't the best and most people cant afford it most liokely they wont be educated restriciting empowerment. 
+
+### 5.3 Reflection 
+> 1. Write summary/thoughts/conclusions from each of the exercises above. Focus on avoiding Bias in algorithms or code you write.'
+- Bias in a computer program comes when a program has acsess to the rest of your apps allowing them to show you things you may agree with.  However this creates a bias becuase 
