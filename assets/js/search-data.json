@@ -4,9 +4,9 @@
         "post0": {
             "title": "Developing Procedures 3.13.2",
             "content": "Essential Knowledge . Procedure -is a named group of programming instructions that serves a purpose | How to code Procedures -While Coding a procedure you must makes sure it has as name and a clear purpose weather to executre a response or complete an action | . How do we make our procedure purposeful and consice . to make a procedure serve a purpose it should be able to hae multiple functions | Also to keep a procedure maximizing capability it should be simple and reduced to get the final result | . What is important to do while writing procedures . It is important to understand you procudeures procedure does when creating one as it will help you create a impactful procedure | . Procedure That Update Grade Based on retake . after you take a quiz your teacher lets you retake it for full credit in which your are able to replace your grade | TEST WITH first quiz GRADE is 40% and second is 90% | PROCEDURE updateGRADE { points, current grade,new grade currentGrade = current points /75 | currentGrade = current crade * 100 if currentGrade &gt; quizGrade | return currentGrade | . | . | } | .",
-            "url": "https://krishiv111.github.io/liverpoolkm/2023/02/02/LessonDevProcedures2.html",
-            "relUrl": "/2023/02/02/LessonDevProcedures2.html",
-            "date": " • Feb 2, 2023"
+            "url": "https://krishiv111.github.io/liverpoolkm/2023/02/04/LessonDevProcedures2.html",
+            "relUrl": "/2023/02/04/LessonDevProcedures2.html",
+            "date": " • Feb 4, 2023"
         }
         
     
@@ -15,9 +15,9 @@
         ,"post1": {
             "title": "My Lists",
             "content": "name = &quot;Krishiv&quot; print (&quot;name&quot;, name, type (name)) age = 15 print (&quot;age&quot;, age, type (age)) print() sports =[&quot;soccer&quot;, &quot;basketball&quot;, &quot;football&quot;] print(&quot;sports&quot;, sports, type(sports)) print(&quot;- sports[1]&quot;, sports[1], type(sports[1])) print() person = { &quot;name&quot;: name, &quot;age&quot;: age } print(&quot;person&quot;, person, type(person)) print(&#39;- person[&quot;name&quot;]&#39;, person[&quot;name&quot;], type(person[&quot;name&quot;])) . name Krishiv &lt;class &#39;str&#39;&gt; age 15 &lt;class &#39;int&#39;&gt; sports [&#39;soccer&#39;, &#39;basketball&#39;, &#39;football&#39;] &lt;class &#39;list&#39;&gt; - sports[1] basketball &lt;class &#39;str&#39;&gt; person {&#39;name&#39;: &#39;Krishiv&#39;, &#39;age&#39;: 15} &lt;class &#39;dict&#39;&gt; - person[&#34;name&#34;] Krishiv &lt;class &#39;str&#39;&gt; . InfoDB = [] InfoDB.append({ &quot;FirstName&quot;: &quot;Krishiv&quot;, &quot;LastName&quot;: &quot;Mahendru&quot;, &quot;DOB&quot;: &quot;april 22&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;favorites subject&quot; : &quot;Comp Sci&quot;, &quot;Favorite_Desserts&quot; : [&quot;Brownies&quot;, &quot;cookies&quot;] }) print(InfoDB) . [{&#39;FirstName&#39;: &#39;Krishiv&#39;, &#39;LastName&#39;: &#39;Mahendru&#39;, &#39;DOB&#39;: &#39;april 22&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;favorites subject&#39;: &#39;Comp Sci&#39;, &#39;Favorite_Desserts&#39;: [&#39;Brownies&#39;, &#39;cookies&#39;]}] . def print_data(d_rec): print(d_rec[&quot;FirstName&quot;], d_rec[&quot;LastName&quot;]) print(&quot; t&quot;, &quot;Residence:&quot;, d_rec[&quot;Residence&quot;]) print(&quot; t&quot;, &quot;Birth Day:&quot;, d_rec[&quot;DOB&quot;]) print(&quot; t&quot;, &quot;favorites subjects: &quot;, end=&quot;&quot;) print(&quot;, &quot;.join(d_rec[&quot;Favorite_Desserts&quot;])) print() def for_loop(InfoDb): print(&quot;For loop output n&quot;) for record in InfoDb: print_data(record) for_loop(InfoDB) . For loop output Krishiv Mahendru Residence: San Diego Birth Day: april 22 favorites subjects: Brownies, cookies . def recursive_loop(i): if i &lt; len(InfoDB): record = InfoDB[i] print_data(record) recursive_loop(i + 1) return print(&quot;Recursive loop output n&quot;) recursive_loop(0) . Recursive loop output Krishiv Mahendru Residence: San Diego Birth Day: april 22 favorites subjects: Brownies, cookies .",
-            "url": "https://krishiv111.github.io/liverpoolkm/2023/02/02/.lists11.html",
-            "relUrl": "/2023/02/02/.lists11.html",
-            "date": " • Feb 2, 2023"
+            "url": "https://krishiv111.github.io/liverpoolkm/2023/02/04/.lists11.html",
+            "relUrl": "/2023/02/04/.lists11.html",
+            "date": " • Feb 4, 2023"
         }
         
     
