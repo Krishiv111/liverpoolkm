@@ -671,7 +671,9 @@
   
 
   
-      ,"page5": {
+
+  
+      ,"page6": {
           "title": "Vocab",
           "content": ". Hello and Welcome To My Vocabulary Book Here I will Post My Vocabulary Development Each Week. . Week 1 . print fuction: A way to print messages in python. | if else statement: If something happens there should action displayed; else another actions should happen. | . Week 2 . lists: a way to put sequence of elements using square brackets. | loops: a way to replay the function without having to manually play the outputs | . Week 3 . OnEvent: a way to interact on the invent of interaction | setscreen: a set screen due to the interaction | . Week 5 Agile Methodology: Agile methodology is a way to have orginizations through the way of a project in a group with the fundamentals below. Communication- talking with group and getting tasks done . critical thinking- solving problems along the way | creativity- to show how your application differs | ollaboration- it can be through leadership and team work | reasearch- learning new aspects | technical- working with your team to achieve purpose of your program | .",
           "url": "https://krishiv111.github.io/liverpoolkm/notes/",
@@ -692,7 +694,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "",
           "url": "https://krishiv111.github.io/liverpoolkm/temp",
@@ -705,7 +707,7 @@
   
 
   
-      ,"page12": {
+      ,"page13": {
           "title": "Time Fragment",
           "content": "&lt;!Doctype html&gt; . My first Table . What I have Learned From APCSP . Week 1 Week 2 Week 4 . During Week 0 I learned to setup all my tools for this course I also explored creating a fastpages | During Week 1 I learned about python, I even made a quiz and learned about if else statements | During Week 2 I learned about lists,dictionaries,and keys. Also I learned about html fragments which is how I am creating my table right now | During Week 3 I created my quiz using code.org app lab and I learned on event commands and a way to work using code.org | . .",
           "url": "https://krishiv111.github.io/liverpoolkm/_pages/zKrishiv's%20FIrst%20Table.html",
@@ -716,7 +718,7 @@
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "Krishiv SubMenu",
           "content": "&lt;!Doctype html&gt; . My first Table . What I have Learned From APCSP . 1.1/1 as I did extra binary hacks and other elements Python Stuff . Week 1 | Group 2 | . .",
           "url": "https://krishiv111.github.io/liverpoolkm/_pages/zzzzzznewsub.html",
@@ -745,7 +747,7 @@
   
 
   
-      ,"page21": {
+      ,"page22": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://krishiv111.github.io/liverpoolkm/robots.txt",
