@@ -25,4 +25,12 @@ title: Blog Post Reflection
 
 ### 5.3 Reflection 
 > 1. Write summary/thoughts/conclusions from each of the exercises above. Focus on avoiding Bias in algorithms or code you write.'
-- Bias in a computer program comes when a program has acsess to the rest of your apps allowing them to show you things you may agree with.  However this creates a bias becuase 
+- Bias in a computer program comes when a program has acsess to the rest of your apps allowing them to show you things you may agree with.  However this creates a bias becuase it allows them to manipulate your feed in order for you to view things about a certain topic shaping your opinion and views. This is important because biased can be formed with programs rather than a rational thought out idea. I dont think this should be done by social media and other apps becuase they should just  be used for content and nothing else.
+
+### 5.4 Reflection 
+> 1. CompSci has 150 ish principles students. Describe a crowdsource idea and how you might initiate it in our environment?
+- A crowdsource idea for APCSP would be a collaboritive chatting site on the class fastpages where we talk about the class and give tips for upcoming students and reflect on assignments. This will allow to give helpful information, and different perspectives. 
+> 2. What about Del Norte crowdsourcing? Could your project be better with crowdsourcing?
+- An idea for crowdsourcing in del norte is to make a chatting service for all del norte students through a myplan discussion bard which allows to give information about different classes which can lead to new conversations and more club opportunites and connections throughout school. For my project is could be better with croud sourcing as we could use data to make charts and add reviews for diffent houses throughout our site 
+> 3. What kind of data could you capture at N@tM to make evening interesting? Perhaps use this data to impress Teachers during finals week.
+- For our project we could take data about the different houses on our websites which can give us more data to help improve layouts and allow for better user experience. In addition we can add a chatting forum where we talk about houses on our site and the persons experience.
