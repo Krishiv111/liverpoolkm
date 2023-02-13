@@ -34,3 +34,31 @@ title: Blog Post Reflection
 - An idea for crowdsourcing in del norte is to make a chatting service for all del norte students through a myplan discussion bard which allows to give information about different classes which can lead to new conversations and more club opportunites and connections throughout school. For my project is could be better with croud sourcing as we could use data to make charts and add reviews for diffent houses throughout our site 
 > 3. What kind of data could you capture at N@tM to make evening interesting? Perhaps use this data to impress Teachers during finals week.
 - For our project we could take data about the different houses on our websites which can give us more data to help improve layouts and allow for better user experience. In addition we can add a chatting forum where we talk about houses on our site and the persons experience.
+
+### 5.5 Reflection
+> 1. When you create a GitHub repository it requests a license type. Review the license types in relationship to this Tech Talk and make some notes in your personal blog.
+- When you make a github repo it asks for specofic types of licenses that have relation to your code and how acsessible you want it. Some of the licenses are a community license such as an apache which allows for your repository to be acsessible to the public. In additon there is an mit license which also allows for acsessible use of your projects features.
+> 2. In your blog, summarize the discussions and personal analysis on Software Licenses/Options, Digital Rights, and other Legal and Ethical thoughts from this College Board topic.
+-  In the coding world today programmers use code for many differnt situations and they also encouter different issues. When this happens many people use slackoverflow, and the github community for help where they can recieve help. However sometimes people also copy code which bring the idea of of licensing which can be used for people who allow other to use their code, people who have some open source code, and others who demand for credit and limit their open source code on their projects. 
+> 3. Make a license for your personal (blog) and Team repositories for the CPT project. Be sure to have a license for both Team GitHub repositories (frontend/backend). Document license(s) you picked and why. FYI, frontend, since it is built on GitHub pages may come with a license and restrictions. Document in blog how team made license choice and process of update.
+
+- For our team we have decided to make an MIT license for both our front end and backend sites, we decided this would be the best Idea as we dont mind open sourcing our code as we are students so other peers could see our code giving us feedback or allowing us to help them as well. In addition I based this principle for my sites also implementing an MIT license
+- [Licence for my PAGE](https://github.com/Krishiv111/liverpoolkm/blob/master/LICENSE.md)
+- [Licence for Team PAGE](https://github.com/CubNavarro/Tri2GroupFastpages/blob/master/LICENSE.md)
+
+
+### 5.6 Reflection 
+> 1. Describe PII you have seen on project in CompSci Principles.
+- Project I have seen on APCSP is when people use logins in order to create accounts for a database.
+> 2. What are your feelings about PII and your personal exposure?
+- In some sense knowing more about pll can make it seem a bit scary however if you think from a consumer standpoint the developers are just trying to make your interaction feel more personal in order to keep you on their site for longer.
+> 3. Describe good and bad passwords? What is another step that is used to assist in authentication.
+- A good password that uses letters numbers and special symbols in addition it should be at least 9 characters long ensuring your online safety. 
+> 4. Try to describe Symmetric and Asymmetric encryption.
+- symetric encryption is the use of one key to get public data and asymetric is the use of getting 2 keys one public and the other as private. 
+> 5. Provide an example of encryption we used in AWS deployment.
+- An example is when you make an instance and use a certain key. 
+> 6. Describe a phishing scheme you have learned about the hard way. Describe some other phishing techniques.
+- A phising scheme I have learned is peopel on social media send you a link with fake information and you log in which leaves your account hacked, also there are text messages phone calls. 
+
+
