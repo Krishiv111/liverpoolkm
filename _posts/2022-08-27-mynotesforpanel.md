@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description: Krishivs summary and Panel Notes 
 categories: [markdown]
 title: My panel Notes
