@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description: Krishivs post for assignment 
 categories: [markdown]
 title: My Weeks Review From other classes
