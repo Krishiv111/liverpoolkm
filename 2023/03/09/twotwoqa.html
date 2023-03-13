@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      10 min read
     
 </span></p>
 
@@ -212,6 +212,66 @@ S3Jp = KRI; this is stored through the data preventing data from being lost with
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="c1"># Load the image</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">'images/smileyface.jpg'</span><span class="p">)</span>
+
+<span class="n">image</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s1">'Title'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Nice'</span>
+<span class="n">image</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s1">'Author'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Krishiv Mahendru'</span>
+
+
+<span class="n">img_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+
+<span class="n">binary_pixels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unpackbits</span><span class="p">(</span><span class="n">img_array</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">hex_pixels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">apply_along_axis</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">hex</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">x</span><span class="p">)),</span> <span class="mi">2</span><span class="p">))[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">binary_pixels</span><span class="p">)</span>
+
+<span class="n">red_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">img_array</span><span class="p">)</span>
+
+<span class="n">red_img</span><span class="p">[:,</span> <span class="p">:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">red_img</span><span class="p">[:,</span> <span class="p">:,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">red_image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">red_img</span><span class="p">)</span>
+
+<span class="n">red_image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'images/smileyface.jpg'</span><span class="p">)</span>
+
+<span class="n">resized_image</span> <span class="o">=</span> <span class="n">red_image</span><span class="o">.</span><span class="n">resize</span><span class="p">((</span><span class="n">red_image</span><span class="o">.</span><span class="n">width</span> <span class="o">//</span> <span class="mi">4</span><span class="p">,</span> <span class="n">red_image</span><span class="o">.</span><span class="n">height</span> <span class="o">//</span> <span class="mi">4</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">image</span><span class="o">.</span><span class="n">info</span><span class="p">)</span>
+
+<span class="n">resized_image</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'jfif': 257, 'jfif_version': (1, 1), 'jfif_unit': 0, 'jfif_density': (1, 1), 'Title': 'Nice', 'Author': 'Krishiv Mahendru'}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
