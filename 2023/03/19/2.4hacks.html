@@ -225,7 +225,8 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Table is empty
+<pre>(2, 'revelon', 'five dollars', 'one day ')
+(5, 'hi', 'one dollar', 'three')
 </pre>
 </div>
 </div>
@@ -286,7 +287,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>A new user record 2 has been created
+<pre>A new user record 777 has been created
 </pre>
 </div>
 </div>
@@ -314,6 +315,13 @@ window.onload = wrap_img;
         <span class="n">price</span> <span class="o">=</span> <span class="s1">'what'</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">message</span> <span class="o">=</span> <span class="s2">"successfully updated"</span>
+    
+    <span class="n">shipping</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter updated Shipping"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">shipping</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="s2">"hacked"</span>
+        <span class="n">shipping</span> <span class="o">=</span> <span class="s1">'what'</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="s2">"successfully updated"</span>
 
     <span class="c1"># Connect to the database file</span>
     <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="p">)</span>
@@ -328,7 +336,7 @@ window.onload = wrap_img;
             <span class="c1"># The uid was not found in the table</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"No uid </span><span class="si">{</span><span class="n">uid</span><span class="si">}</span><span class="s2"> was not found in the table"</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The row with product id </span><span class="si">{</span><span class="n">uid</span><span class="si">}</span><span class="s2"> the password has been </span><span class="si">{</span><span class="n">message</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The row with product id </span><span class="si">{</span><span class="n">uid</span><span class="si">}</span><span class="s2"> the uid and price  has been </span><span class="si">{</span><span class="n">message</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
             <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
     <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while executing the UPDATE:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
@@ -351,7 +359,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The row with user id 2 the password has been successfully updated
+<pre>The row with product id 777 the uid and price  has been successfully updated
 </pre>
 </div>
 </div>
@@ -409,7 +417,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The row with uid 1 was successfully deleted
+<pre>The row with uid 777 was successfully deleted
 </pre>
 </div>
 </div>
@@ -461,7 +469,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>A new user record 5 has been created
+<pre>The row with product id 5 the password has been successfully updated
 </pre>
 </div>
 </div>
