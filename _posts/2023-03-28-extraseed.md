@@ -7,8 +7,12 @@ title: Extra Seed Tri 3
 
 # Summary 
 - I learned a lot about csusm and I really learned a lot about hte reality of college and furthering education. Although it wont be easy it is important to network early and look for internships asap making a greater network opening windows down the line. In addition to that I really liked teh project we made as it allowed me to mix creativity with STEM we created a vibrating tooth brush with a help of a tooth brush a +/- cord and a battery that gave it energy. In addition I learned a lot from Ashley and John and would love to talk to them soon!
-# Introduction
 
+
+
+![]({{site.baseurl}}/images/halo.JPG "https://github.com/fastai/fastpages")
+
+# Introduction
 Speaker 1: John is a computer scientist at csusm he really enjoys programming and finds its a great interest 
 within coding, he wanted to pursue computer science becuase he finds a great intrest with computers and he thought that he would want to look toward a better understanding. 
 
