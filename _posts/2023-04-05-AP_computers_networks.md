@@ -24,15 +24,15 @@ List specification of your Computer, or Computers if working as Pair/Trio
 - OS: 11.7.4 MacOS BigSUR
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
-- Input devices
-- Output devices
-- Program File
-- Program Code
-- Processes
+- Input devices  lets the user to the input
+- Output devices toward the output or the outcome 
+- Program File what is ued to have in order to have code embedd
+- Program Code Python java or sql or C++ code in order to run different things.
+- Processes A file that can be executed by the potral
 - Ports
 - Data File
-- Inspect Running Code
-- Inspect Variables
+- Inspect Running Code A code of a program that is ran and can be inspected to view actual paramerters. 
+- Inspect Variables To show that  show within running code. 
 
 ![]({{site.baseurl}}/images/INPUT.png "https://github.com/fastai/fastpages")
 
@@ -50,7 +50,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - Bandwidth is usually measured in bits per second
 
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
-    - Path 
+    - Path
     - Route
     - Computer System
     - Computer Device
