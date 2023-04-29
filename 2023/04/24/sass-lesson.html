@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -127,7 +127,7 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Why-SASS?">Why SASS?<a class="anchor-link" href="#Why-SASS?"> </a></h1><p>SASS is an improvement on CSS in that there are methods of abstraction. It is a <strong><em>__</em></strong> language that is <strong>_</strong> into CSS, which means that <strong><strong>__</strong></strong>, which is what your web browser can read.</p>
+<h1 id="Why-SASS?">Why SASS?<a class="anchor-link" href="#Why-SASS?"> </a></h1><p>SASS is an improvement on CSS in that there are methods of abstraction. It is a stylesheet language that is compiled into CSS, which means that Sass will translate the Sass code you wrote into CSS, which is what your web browser can read</p>
 <h1 id="SASS-vs-SCSS">SASS vs SCSS<a class="anchor-link" href="#SASS-vs-SCSS"> </a></h1><p>As you learn about Sass, you might notice something called Scss. They are basically the same thing except that Scss uses curly braces and semicolons to distinguish between lines. Sass uses indentation and newlines instead.</p>
 <p>We will be teaching the Scss syntax because it is more commonly used.</p>
 
@@ -149,7 +149,10 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Nesting">Nesting<a class="anchor-link" href="#Nesting"> </a></h1><p>Take notes here</p>
+<h1 id="Nesting">Nesting<a class="anchor-link" href="#Nesting"> </a></h1><ul>
+<li>SASS provides a feature called nesting in which you can write styling code in a way that looks like an HTML hierarchy.</li>
+<li>It allows you to write with many diffrent sectors </li>
+</ul>
 
 </div>
 </div>
@@ -165,6 +168,21 @@ window.onload = wrap_img;
 .a .c {
     color: blue;
 }</code></pre>
+<h1 id="Sass-equivalent">Sass equivalent<a class="anchor-link" href="#Sass-equivalent"> </a></h1><ul>
+<li><p>.a {</p>
+<ul>
+<li>.b {</li>
+<li>color: green;</li>
+<li><p>}</p>
+</li>
+<li><p>.c {</p>
+</li>
+<li>color: blue;</li>
+<li>}</li>
+</ul>
+</li>
+<li>}</li>
+</ul>
 
 </div>
 </div>
@@ -172,14 +190,22 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Extend/Inheritance">Extend/Inheritance<a class="anchor-link" href="#Extend/Inheritance"> </a></h1><p>What are some similarities that the buttons share? What are the differences?</p>
-<p>Take notes here</p>
+<ul>
+<li>They have the same shape and size but the color is diffrent and the text on the boxes are diffrent </li>
+<li>The backgounds differ</li>
+<li>THey use the same properties</li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Mixin">Mixin<a class="anchor-link" href="#Mixin"> </a></h1><p>Take notes here</p>
+<h1 id="Mixin">Mixin<a class="anchor-link" href="#Mixin"> </a></h1><ul>
+<li>Mixin allows to take in parameters and give it back</li>
+<li>IT is like a procedure but with saas and it is a type of property which give it better usage within industry</li>
+<li>you can do a lot wiht mixin</li>
+</ul>
 
 </div>
 </div>
@@ -191,16 +217,88 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="nd">@mixin</span> <span class="n">custom</span><span class="o">-</span><span class="n">style</span><span class="p">(</span><span class="err">$</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="err">$</span><span class="n">color</span><span class="p">;</span>
+  <span class="n">color</span><span class="p">:</span> <span class="err">$</span><span class="n">color</span><span class="p">;</span>
+  <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="err">$</span><span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">.</span><span class="n">custom</span><span class="o">-</span><span class="n">selector</span> <span class="p">{</span>
+  <span class="nd">@include</span> <span class="n">custom</span><span class="o">-</span><span class="n">style</span><span class="p">(</span><span class="c1">#91ff00, 18px);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Function">Function<a class="anchor-link" href="#Function"> </a></h1><p>Take notes here</p>
+<h1 id="Function">Function<a class="anchor-link" href="#Function"> </a></h1><ul>
+<li>Function are avalble within saas</li>
+<li>They can call with paranthesis and are like parameters in python</li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Import">Import<a class="anchor-link" href="#Import"> </a></h1><p>Take notes here</p>
+<h1 id="Import">Import<a class="anchor-link" href="#Import"> </a></h1><ul>
+<li>Imports are to prevent clutter through files </li>
+<li>You can make many files like style.css and store them in one places</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Quiz-Answers">Quiz Answers<a class="anchor-link" href="#Quiz-Answers"> </a></h1><p>B
+A
+C
+B
+D
+B
+B</p>
+
+</div>
+</div>
+</div>// Using Mixin To create buttons that are blue and gray 
+
+@mixin button($color, $bg-color, $border-radius) {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $bg-color;
+  color: $color;
+  border-radius: $border-radius;
+  text-decoration: none;
+}
+
+.button-primary {
+  @include button(#fff, #007bff, 5px);
+}
+
+.button-secondary {
+  @include button(#fff, #6c757d, 5px);
+}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="More-Features-EXTRA-CREDIT">More Features EXTRA CREDIT<a class="anchor-link" href="#More-Features-EXTRA-CREDIT"> </a></h1><ul>
+<li>Within saas there is another features such as control directives; this allows for usage of if else and for which are conditionals likewise used in python </li>
+<li>Color functions  are another saas feature which alow oyu to lighten() darken() and saturate() backgrounds and buttons within SAAS these are more properties that are usen through saas</li>
+</ul>
 
 </div>
 </div>
