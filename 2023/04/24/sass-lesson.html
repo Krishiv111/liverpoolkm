@@ -274,24 +274,40 @@ B</p>
 
 </div>
 </div>
-</div>// Using Mixin To create buttons that are blue and gray 
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 
-@mixin button($color, $bg-color, $border-radius) {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: $bg-color;
-  color: $color;
-  border-radius: $border-radius;
-  text-decoration: none;
-}
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">Using</span> <span class="n">Mixin</span> <span class="n">To</span> <span class="n">create</span> <span class="n">buttons</span> <span class="n">that</span> <span class="n">are</span> <span class="n">blue</span> <span class="ow">and</span> <span class="n">gray</span> 
 
-.button-primary {
-  @include button(#fff, #007bff, 5px);
-}
+<span class="nd">@mixin</span> <span class="n">button</span><span class="p">(</span><span class="err">$</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">bg</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">display</span><span class="p">:</span> <span class="n">inline</span><span class="o">-</span><span class="n">block</span><span class="p">;</span>
+  <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span> <span class="mi">20</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="err">$</span><span class="n">bg</span><span class="o">-</span><span class="n">color</span><span class="p">;</span>
+  <span class="n">color</span><span class="p">:</span> <span class="err">$</span><span class="n">color</span><span class="p">;</span>
+  <span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">:</span> <span class="err">$</span><span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">;</span>
+  <span class="n">text</span><span class="o">-</span><span class="n">decoration</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+<span class="p">}</span>
 
-.button-secondary {
-  @include button(#fff, #6c757d, 5px);
-}
+<span class="o">.</span><span class="n">button</span><span class="o">-</span><span class="n">primary</span> <span class="p">{</span>
+  <span class="nd">@include</span> <span class="n">button</span><span class="p">(</span><span class="c1">#fff, #007bff, 5px);</span>
+<span class="p">}</span>
+
+<span class="o">.</span><span class="n">button</span><span class="o">-</span><span class="n">secondary</span> <span class="p">{</span>
+  <span class="nd">@include</span> <span class="n">button</span><span class="p">(</span><span class="c1">#fff, #6c757d, 5px);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
