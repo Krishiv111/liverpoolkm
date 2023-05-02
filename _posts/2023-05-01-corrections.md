@@ -1,7 +1,9 @@
+---
 toc: true
-layout: base
-categories: [mcq]
-title: MCQ 6 (2020) CORRECTIONS 
+layout: post
+description: mcq
+categories: [markdown]
+title: MCQ
 ---
 
 ![]({{site.baseurl}}/images/mcq1.png "https://github.com/fastai/fastpages")
