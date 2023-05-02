@@ -8,7 +8,8 @@ title: MCQ
 
 ![]({{site.baseurl}}/images/mcq1.png "https://github.com/fastai/fastpages")
 
-
+# Reflection
+- I got a 52/67 this was because I interpreteed the question wornt also I started it late at night making me to take the test with a rush not making me think through each problem. However all the corrections that I went over I didnt struggle with and I was immidieaty allowing for me to know have a better score.
 
 | Question | Answers |
 | -------- | -------- |
