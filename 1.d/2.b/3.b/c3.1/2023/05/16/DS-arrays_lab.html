@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      13 min read
+      21 min read
     
 </span></p>
 
@@ -341,6 +341,203 @@ For loop with shortcut (*) row expansion
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">"""</span>
+<span class="sd">* Creator: Nighthawk Coding Society</span>
+<span class="sd">2D arrays</span>
+<span class="sd">"""</span>
+
+<span class="c1"># Classic nested loops using ij indexes, this shows 2 dimensions</span>
+<span class="k">def</span> <span class="nf">print_matrix1</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Classic nested loops using ij indexes"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">matrix</span><span class="p">)):</span>  <span class="c1"># outer loop (i), built on length of matrix (rows)</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">])):</span>  <span class="c1"># inner loop (j), built on length of items (columns)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s2">" "</span><span class="p">)</span>  <span class="c1"># [i][j] is 2D representation, end changes newline to space</span>
+        <span class="nb">print</span><span class="p">()</span>
+
+
+<span class="c1"># Enhanced nested for loops, row and col variables</span>
+<span class="k">def</span> <span class="nf">print_matrix2</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Enhanced nested for loops"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">matrix</span><span class="p">:</span>  <span class="c1"># short hand row iterator, index is not required</span>
+        <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">row</span><span class="p">:</span>  <span class="c1"># short hand column iterator</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">" "</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">()</span>
+
+
+<span class="c1"># For loop with shortcut (*) row expansion</span>
+<span class="k">def</span> <span class="nf">print_matrix3</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"For loop with shortcut (*) row expansion"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">matrix</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">row</span><span class="p">)</span>  <span class="c1"># pythons has (*) that is one line expansion of row into columns</span>
+
+
+<span class="k">def</span> <span class="nf">test_matrices</span><span class="p">():</span>
+    <span class="c1"># setup some text matrices</span>
+    <span class="n">keypad</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+              <span class="p">[</span><span class="s2">" "</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">" "</span><span class="p">]]</span>
+
+    <span class="n">keyboard</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">"`"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span>  <span class="mi">4</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"-"</span><span class="p">,</span><span class="s2">" "</span><span class="p">,</span> <span class="s2">"="</span><span class="p">],</span>
+                <span class="p">[</span><span class="s2">" "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"Q"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"W"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"E"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"R"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"T"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"Y"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"U"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"I"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"O"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"P"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"["</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"]"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"</span><span class="se">\\</span><span class="s2">"</span><span class="p">],</span>
+                <span class="p">[</span><span class="s2">" "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"A"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"S"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"D"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"F"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"G"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"H"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"J"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"K"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"L"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">";"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"'"</span><span class="p">],</span>
+                <span class="p">[</span><span class="s2">" "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"Z"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"V"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"N"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"M"</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">","</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"."</span><span class="p">,</span> <span class="s2">" "</span><span class="p">,</span> <span class="s2">"/"</span><span class="p">]]</span>
+
+    <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="c1"># binary</span>
+            <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="c1"># decimal</span>
+            <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="s2">"A"</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"D"</span><span class="p">,</span> <span class="s2">"E"</span><span class="p">,</span> <span class="s2">"F"</span><span class="p">]</span> <span class="c1"># hexadecimal</span>
+            <span class="p">]</span>
+    <span class="n">tree</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[</span><span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">' '</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">'|'</span><span class="p">,</span> <span class="s1">'|'</span><span class="p">,</span> <span class="s1">'|'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">' '</span><span class="p">],</span>
+    <span class="p">]</span>
+
+    <span class="c1"># pack into a list of matrices with titles</span>
+    <span class="n">matrices</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[</span><span class="s2">"Keypad"</span><span class="p">,</span> <span class="n">keypad</span><span class="p">],</span> 
+        <span class="p">[</span><span class="s2">"Keyboard"</span><span class="p">,</span> <span class="n">keyboard</span><span class="p">],</span> 
+        <span class="p">[</span><span class="s2">"Number Systems"</span><span class="p">,</span> <span class="n">numbers</span><span class="p">],</span>
+        <span class="p">[</span><span class="s2">"Christmas Tree"</span><span class="p">,</span> <span class="n">tree</span><span class="p">]</span>
+    <span class="p">]</span>
+
+    <span class="c1"># loop 2D matrix with returning list in [key, value] arrangement</span>
+    <span class="k">for</span> <span class="n">title</span><span class="p">,</span> <span class="n">matrix</span> <span class="ow">in</span> <span class="n">matrices</span><span class="p">:</span>  <span class="c1"># unpack title and matrix as variables</span>
+        
+        <span class="c1"># formatted message with concatenation</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">matrix</span><span class="p">),</span> <span class="s2">"x"</span><span class="p">,</span> <span class="s2">"~"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">matrix</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>  
+        
+        <span class="c1"># use three different methods</span>
+        <span class="n">print_matrix1</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+        <span class="n">print_matrix2</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+        <span class="n">print_matrix3</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+        <span class="c1"># blank link in between</span>
+        <span class="nb">print</span><span class="p">()</span>
+
+
+<span class="c1"># tester section</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="n">test_matrices</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Keypad 4 x ~3
+Classic nested loops using ij indexes
+1 2 3 
+4 5 6 
+7 8 9 
+  0   
+Enhanced nested for loops
+1 2 3 
+4 5 6 
+7 8 9 
+  0   
+For loop with shortcut (*) row expansion
+1 2 3
+4 5 6
+7 8 9
+  0  
+
+Keyboard 4 x ~24
+Classic nested loops using ij indexes
+` 1   2   3   4   5   6   7   8   9   0   -   = 
+    Q   W   E   R   T   Y   U   I     O   P   [   ]   \ 
+      A   S   D   F   G   H   J   K   L   ;   ' 
+        Z   X   C   V   B   N   M   ,   .   / 
+Enhanced nested for loops
+` 1   2   3   4   5   6   7   8   9   0   -   = 
+    Q   W   E   R   T   Y   U   I     O   P   [   ]   \ 
+      A   S   D   F   G   H   J   K   L   ;   ' 
+        Z   X   C   V   B   N   M   ,   .   / 
+For loop with shortcut (*) row expansion
+` 1   2   3   4   5   6   7   8   9   0   -   =
+    Q   W   E   R   T   Y   U   I     O   P   [   ]   \
+      A   S   D   F   G   H   J   K   L   ;   '
+        Z   X   C   V   B   N   M   ,   .   /
+
+Number Systems 3 x ~2
+Classic nested loops using ij indexes
+0 1 
+0 1 2 3 4 5 6 7 8 9 
+0 1 2 3 4 5 6 7 8 9 A B C D E F 
+Enhanced nested for loops
+0 1 
+0 1 2 3 4 5 6 7 8 9 
+0 1 2 3 4 5 6 7 8 9 A B C D E F 
+For loop with shortcut (*) row expansion
+0 1
+0 1 2 3 4 5 6 7 8 9
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+
+Christmas Tree 10 x ~21
+Classic nested loops using ij indexes
+                  *                       
+                * * *                       
+              * * * * *                     
+            * * * * * * *                   
+          * * * * * * * * *                 
+        * * * * * * * * * * *               
+      * * * * * * * * * * * * *             
+    * * * * * * * * * * * * * * *           
+  * * * * * * * * * * * * * * * * *         
+                | | |                     
+Enhanced nested for loops
+                  *                       
+                * * *                       
+              * * * * *                     
+            * * * * * * *                   
+          * * * * * * * * *                 
+        * * * * * * * * * * *               
+      * * * * * * * * * * * * *             
+    * * * * * * * * * * * * * * *           
+  * * * * * * * * * * * * * * * * *         
+                | | |                     
+For loop with shortcut (*) row expansion
+                  *                      
+                * * *                      
+              * * * * *                    
+            * * * * * * *                  
+          * * * * * * * * *                
+        * * * * * * * * * * *              
+      * * * * * * * * * * * * *            
+    * * * * * * * * * * * * * * *          
+  * * * * * * * * * * * * * * * * *        
+                | | |                    
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -398,10 +595,10 @@ For loop with shortcut (*) row expansion
 
 
 
-<div id="9cd43965-757a-4769-976d-07996976c40e"></div>
+<div id="8f103329-cecd-4f0d-a54d-b120721eaa87"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#9cd43965-757a-4769-976d-07996976c40e');
+var element = $('#8f103329-cecd-4f0d-a54d-b120721eaa87');
 
 /*
 * Creator: Nighthawk Coding Society
