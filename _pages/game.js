@@ -1,6 +1,7 @@
 let clickedCard = null;
 let preventClick = false;
 let combosFound = 0;
+let score = 0;
 
 const colors= [
     'pink',
@@ -57,6 +58,8 @@ function onCardClicked(e) {
             //target.className += 'done ';
             //match at the bot
             combosFound++;
+            score++; 
+            updateScore();
             clickedCard = null;
             if(combosFound === 8) {
                 alert('NICE YOU WIN!');
@@ -81,6 +84,19 @@ function onCardClicked(e) {
         }
      }
 }
+
+function updateScore() {
+    const scoreElement = document.getElementById('score');
+    if (scoreElement) {
+      scoreElement.textContent = 'Score: ' + score;
+    }
+  }
+ 
+  cards.forEach(card => {
+    card.addEventListener('click', onCardClicked);
+  });
+  
+  updateScore();
 
 
 
