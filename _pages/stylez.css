@@ -1,5 +1,4 @@
 
-
 .row{
     text-align: center;
 }
@@ -10,6 +9,13 @@
     height: 100px;
     background-color:#eee;
     cursor: pointer;
+}
+.card.done {
+    cursor: default;
+}
+.card.done:hover {
+    cursor: default;
+    box-shadow:none;
 }
 
 .card:hover {
