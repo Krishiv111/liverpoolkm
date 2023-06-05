@@ -154,9 +154,49 @@ window.onload = wrap_img;
         body{
             background-color: rgb(163, 186, 255);
         }
+
+        #timer {
+      border: 1px solid black; 
+      padding: 5px; /* Add some padding for spacing */
+      font-size: 24px; /* Adjust the font size */
+      width: 155px;
+      justify-content: center;
+      align-items: flex-start;
+    }
     </style>
     
  <script src="./game.js"></script>
+
+ <div id="timer">00:00:00</div>
+
+  <script>
+    var timerElement = document.getElementById('timer');
+    var seconds = 0;
+    var minutes = 0;
+    var hours = 0;
+
+    function updateTime() {
+      seconds++;
+      if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
+        if (minutes >= 60) {
+          minutes = 0;
+          hours++;
+        }
+      }
+
+      
+      var time = (hours ? (hours > 9 ? hours : '0' + hours) : '00') + ':' +
+                 (minutes ? (minutes > 9 ? minutes : '0' + minutes) : '00') + ':' +
+                 (seconds > 9 ? seconds : '0' + seconds);
+
+      timerElement.textContent = time;
+    }
+
+    
+    var timerInterval = setInterval(updateTime, 1000);
+    </script>
 </body>
       </div>
     </main><footer class="site-footer h-card">
