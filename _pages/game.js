@@ -1,8 +1,9 @@
+//Variables set
 let clickedCard = null;
 let preventClick = false;
 let combosFound = 0;
 let score = 0;
-
+// A set of the colors in order to go through and randomize the colors.
 const colors= [
     'pink',
     'yellow',
@@ -13,16 +14,16 @@ const colors= [
     'red',
     'orange',
 ];
-
+// THis is a way to randomize the code, firstly the cards is set within a loop to go through the above code, then each card is set into a number through pardse int for the cards array 
 const cards = [...document.querySelectorAll('.card')];
 for (let color of colors) {
   const cardAIndex = parseInt(Math.random() * cards.length);
   const cardA = cards[cardAIndex];
-  cards.splice(cardAIndex, 1);
-  cardA.className += ` ${color}`;
-  cardA.setAttribute('data-color', color);
+  cards.splice(cardAIndex, 1); // Add within the 
+  cardA.className += ` ${color}`; // Puts the cards within an array. 
+  cardA.setAttribute('data-color', color);// Sets the card color to the card works like an assignee
 
-  const cardBIndex = parseInt(Math.random() * cards.length);
+  const cardBIndex = parseInt(Math.random() * cards.length); //provides teh same input for the other part of the other sets of carsd
   const cardB = cards[cardBIndex];
   cards.splice(cardBIndex, 1);
   cardB.className += ` ${color}`;
@@ -40,7 +41,7 @@ function onCardClicked(e) {
     target.className = target.className.
         replace('color-hidden', '')
         .trim();
-    //target.className += 'done';
+    
 
     console.log(target.getAttribute('data-color'));
     
@@ -54,9 +55,6 @@ function onCardClicked(e) {
         target.getAttribute('data-color')
     ) {
             console.log('cards ARE equal');
-            //clickedCard.className += 'done ';
-            //target.className += 'done ';
-            //match at the bot
             combosFound++;
             score++; 
             updateScore();
@@ -84,7 +82,7 @@ function onCardClicked(e) {
         }
      }
 }
-
+//Simeple scoring function where it takes the score and adds it when you get a combination for the reason we use combos. 
 function updateScore() {
     const scoreElement = document.getElementById('score');
     if (scoreElement) {

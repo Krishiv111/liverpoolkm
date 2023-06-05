@@ -76,7 +76,7 @@ window.onload = wrap_img;
 <link rel="stylesheet" type="text/css" href="./stylez.css">
 <title>Memory Game</title>
 </head>
-
+<!--The point of all these divisions is to make the rows and define the individual boxes, color hidden signifies the grey color meaning that the user wont be able to see the original color -->
 <body>
     <div class="row">
         <div
@@ -165,7 +165,7 @@ window.onload = wrap_img;
     }
     </style>
     <div id="score">Score: 0</div>
-    
+  <!-- This is the code for the timer I decided to put it here as I wasnted to make it easily acsess also this was made before the rest of the code so I had not made a script file-->
  <script src="./game.js"></script>
 
  <div id="timer">00:00:00</div>
@@ -190,14 +190,14 @@ window.onload = wrap_img;
       
       var time = (hours ? (hours > 9 ? hours : '0' + hours) : '00') + ':' +
                  (minutes ? (minutes > 9 ? minutes : '0' + minutes) : '00') + ':' +
-                 (seconds > 9 ? seconds : '0' + seconds);
+                 (seconds > 9 ? seconds : '0' + seconds); //This is a way to format the hours code had to look this up as I didnt understand the full fucntionality of a timer within js. 
 
       timerElement.textContent = time;
     }
 
     
     var timerInterval = setInterval(updateTime, 1000);
-
+/// This is a way to code an interval of miliseconds so you get 00:00:00
     
     
     </script>
