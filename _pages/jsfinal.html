@@ -193,6 +193,12 @@ window.onload = wrap_img;
                  (seconds > 9 ? seconds : '0' + seconds); //This is a way to format the hours code had to look this up as I didnt understand the full fucntionality of a timer within js. 
 
       timerElement.textContent = time;
+      
+
+      if (combosFound === 8) {
+    clearInterval(timerInterval); // Stop the timer interval
+    alert("NICE YOU WIN!");
+  } 
     }
 
     
