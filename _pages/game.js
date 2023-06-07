@@ -19,13 +19,13 @@ const cards = [...document.querySelectorAll('.card')];
 for (let color of colors) {
   const cardAIndex = parseInt(Math.random() * cards.length);
   const cardA = cards[cardAIndex];
-  cards.splice(cardAIndex, 1); // Add within the 
+  cards.splice(cardAIndex, 1); // Splice to remove so that there doesent get more than this color again
   cardA.className += ` ${color}`; // Puts the cards within an array. 
   cardA.setAttribute('data-color', color);// Sets the card color to the card works like an assignee
 
   const cardBIndex = parseInt(Math.random() * cards.length); //provides teh same input for the other part of the other sets of carsd
   const cardB = cards[cardBIndex];
-  cards.splice(cardBIndex, 1);
+  cards.splice(cardBIndex, 1); // since its mathcing game you need two sets allowing for this to be here
   cardB.className += ` ${color}`;
   cardB.setAttribute('data-color', color);
 }
