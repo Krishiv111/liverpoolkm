@@ -9,7 +9,7 @@ title: Reflection
 # Skills I have Learned
 -----------------------------------------------------------
 
-- At the beginning of the school year I had entered as a person who was brand new with coding and using git, and vscode, through the year I learned a lot about algorithm, deployment, flask and fastpages. With all this new content approaching me I felt very overwhelmed feeling like this may not be something I am into. However with perseverance it allowed me to take a deeper dive with these skills and I came out a stronger person then I started with. Some of the crucial skills I learned within the course of this year was the knowledge of python algorithms, and data structures also my application of certain skills such as  collaboration, communication and presentational speaking skills have greatly improved through the constant meeting with scrum team, code reviews with Mr Yueng, and with the student taught lessons and allowed me to thrive not only in the class but also with other aspects of education in during application of leadership in clubs and in my other classes. Overall this class has taught me a lot and I am excited to improve and continue next year in CSA!
+- At the beginning of the school year I had entered as a person who was brand new with coding and using git, and vscode, through the year I learned a lot about algorithm, deployment, flask and fastpages. With all this new content approaching me I felt very overwhelmed feeling like this may not be something I am into. However with perseverance it allowed me to take a deeper dive with these skills and I came out a stronger person then I started with. Some of the crucial skills I learned within the course of this year was the knowledge of python algorithms, and data structures also my application of certain skills such as  collaboration, communication and presentational speaking skills have greatly improved through the constant meeting with scrum team, code reviews with Mr Yeung, and with the student taught lessons and allowed me to thrive not only in the class but also with other aspects of education in during application of leadership in clubs and in my other classes. Overall this class has taught me a lot and I am excited to improve and continue next year in CSA!
 
 # Highs and Lows From This Years
 -----------------------------------------------------------
@@ -31,7 +31,7 @@ title: Reflection
 
 # Thank You 
 ----------------------------------------------------------
-- I would Like to conclude this blog with a thanks to Mr Yueng for helping me with becoming not only a better programmer but a better person with all the lessons you have taught me and I have enjoyed being your student for the past 3 trimesters. Thanks!
+- I would Like to conclude this blog with a thanks to Mr Yeung for helping me with becoming not only a better programmer but a better person with all the lessons you have taught me and I have enjoyed being your student for the past 3 trimesters. Also I really appreciate you for helping by being available on weekend through slack with helping me with bugs on aws and in flask. Thanks!
 
 
 
